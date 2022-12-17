@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import { Row } from './Row';
+import { rowFieldData } from './RowConfig';
+import Banner from "./Banner"
+import { NavBar } from './NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <NavBar/>
+      <Banner />
+      {rowFieldData.map(rowData=>(
+        <Row key={rowData.id} title={rowData.title} fetchURL={rowData.relatedURL} isLargeRow={rowData.isLargeRow}/>
+      ))}
     </div>
   );
 }
