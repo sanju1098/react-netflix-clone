@@ -1,6 +1,6 @@
 import './App.css';
 import { Row } from './Row';
-import { rowFieldData } from './RowConfig';
+import { rowFieldData } from './requests';
 import Banner from "./Banner"
 import { NavBar } from './NavBar';
 

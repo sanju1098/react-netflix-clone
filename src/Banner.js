@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from './axios'
 import {IMAGEBASEURL, requests} from './requests';
-import "./Banner.css"
+import "./App.css"
 const Banner = () => {
     const [banner, setBanner] = useState([]);
     useEffect(() => {

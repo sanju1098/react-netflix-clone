@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from './axios'
-import './Row.css'
+import './App.css'
 import { IMAGEBASEURL } from "./requests"
 
 export const Row = ({ title, fetchURL, isLargeRow }) => {
